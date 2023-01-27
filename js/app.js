@@ -27,7 +27,6 @@ elInput.addEventListener("input", (evt) => {
 		fetch(`https://restcountries.com/v3.1/name/${value}`)
 			.then((res) => res.json())
 			.then((data) => {
-				console.log(data);
 				title.textContent = data[0].name.common;
 				capital.textContent = "Capital: " + data[0].capital;
 				population.textContent = "Population: " + data[0].population;
