@@ -20,7 +20,6 @@ elInput.addEventListener("input", (evt) => {
 	)
 		.then((res) => res.json())
 		.then((data) => {
-			console.log(data);
 			weather.textContent = "Weather: " + data.main.feels_like;
 		});
 	function findState() {
